@@ -2,15 +2,19 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Nieuws</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuwsberichten</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <h1>Nieuwsberichten</h1>
+    
     <ul>
-        <% news.forEach(item => { %>
-            <li><a href="/detail/<%= item.slug %>"><%= item.title %></a></li>
-        <% }) %>
+        <% nieuwsberichten.forEach(bericht => { %>
+            <li><a href="/detail/<%= bericht.slug %>"><%= bericht.title %></a></li>
+        <% }); %>
     </ul>
-    <a href="/add">Voeg Nieuws Toe</a>
+
+    <a href="/add" class="add-button">Voeg een nieuw artikel toe</a>
 </body>
 </html> 

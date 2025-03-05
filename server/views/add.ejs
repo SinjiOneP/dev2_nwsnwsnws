@@ -2,19 +2,24 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title>Voeg Nieuws Toe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artikel Toevoegen</title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <h1>Voeg een nieuw artikel toe</h1>
     <form action="/add" method="POST">
-        <label for="title">Titel:</label>
-        <input type="text" name="title" required>
         <label for="slug">Slug:</label>
-        <input type="text" name="slug" required>
+        <input type="text" id="slug" name="slug" required>
+        <br>
+        <label for="title">Titel:</label>
+        <input type="text" id="title" name="title" required>
+        <br>
         <label for="content">Inhoud:</label>
-        <textarea name="content" required></textarea>
-        <button type="submit">Toevoegen</button>
+        <textarea id="content" name="content" required></textarea>
+        <br>
+        <button type="submit" class="add-button">Artikel Toevoegen</button>
     </form>
-    <a href="/">Terug naar de startpagina</a>
+    <a href="/" class="add-button">Terug naar de startpagina</a>
 </body>
 </html> 

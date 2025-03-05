@@ -2,11 +2,13 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <title><%= newsItem.title %></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
-    <h1><%= newsItem.title %></h1>
-    <p><%= newsItem.content %></p>
-    <a href="/">Terug naar de startpagina</a>
+    <h1><%= title %></h1>
+    <p><%= content %></p>
+    <a href="/" class="add-button">Terug naar de startpagina</a>
 </body>
 </html> 

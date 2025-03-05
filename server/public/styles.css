@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Lichtere achtergrondkleur */
+    color: #333; /* Donkergrijze tekstkleur voor betere leesbaarheid */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #2c3e50; /* Donkerblauwe kleur voor de koppen */
+}
+
+a {
+    color: #2980b9; /* Blauwe kleur voor links */
+    text-decoration: none; /* Geen onderstreping */
+}
+
+a:hover {
+    text-decoration: underline; /* Onderstreping bij hover */
+}
+
+ul {
+    list-style-type: none; /* Geen opsommingstekens */
+    padding: 0;
+}
+
+li {
+    margin: 10px 0; /* Ruimte tussen de artikelen */
+    padding: 10px;
+    background-color: #ffffff; /* Witte achtergrond voor de artikelen */
+    border-radius: 5px; /* Ronde hoeken */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+li a {
+    display: block; /* Maak de link een blok */
+    padding: 10px;
+}
+
+.add-button {
+    display: inline-block; /* Maak het een blok */
+    padding: 10px 15px; /* Ruimte binnen de knop */
+    background-color: #2980b9; /* Blauwe achtergrondkleur */
+    color: #fff; /* Witte tekstkleur */
+    text-decoration: none; /* Geen onderstreping */
+    border-radius: 5px; /* Ronde hoeken */
+    margin-bottom: 20px; /* Ruimte onder de knop */
+}
+
+.add-button:hover {
+    background-color: #1a6a8a; /* Donkerdere kleur bij hover */
+}
+
+input[type="text"],
+textarea {
+    width: 100%; /* Maak de invoervelden en textarea breed */
+    padding: 10px; /* Ruimte binnen de velden */
+    margin: 10px 0; /* Ruimte boven en onder de velden */
+    border: 1px solid #ccc; /* Grijze rand */
+    border-radius: 5px; /* Ronde hoeken */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Schaduw voor diepte */
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border-color: #2980b9; /* Blauwe rand bij focus */
+    outline: none; /* Geen standaard focus outline */
+} 
