@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Nieuws</title>
+</head>
+<body>
+    <h1>Nieuwsberichten</h1>
+    <ul>
+        <% news.forEach(item => { %>
+            <li><a href="/detail/<%= item.slug %>"><%= item.title %></a></li>
+        <% }) %>
+    </ul>
+    <a href="/add">Voeg Nieuws Toe</a>
+</body>
+</html> 
